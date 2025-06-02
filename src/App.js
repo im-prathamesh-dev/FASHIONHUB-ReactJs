@@ -10,22 +10,22 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Cart from './pages/Cart';
 import UserProfilePage from './pages/UserProfilePage';
-// import { BoltLoaderComponent}  from '../src/components/BoltLoaderComponent'; // Import loader component
+import { BoltLoaderComponent}  from '../src/components/BoltLoaderComponent'; // Import loader component
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // // Simulate loading on initial mount
-  // useEffect(() => {
-  //   const timer = setTimeout(() => setLoading(false), 2000); // 2 seconds loader
-  //   return () => clearTimeout(timer);
-  // }, []);
+  // Simulate loading on initial mount
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000); // 2 seconds loader
+    return () => clearTimeout(timer);
+  }, []);
 
-  // if (loading) {
-  //   return <BoltLoaderComponent />;
-  // }
+  if (loading) {
+    return <BoltLoaderComponent />;
+  }
 
   return (
     <Router>
