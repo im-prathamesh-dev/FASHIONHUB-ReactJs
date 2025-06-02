@@ -10,7 +10,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Cart from './pages/Cart';
 import UserProfilePage from './pages/UserProfilePage';
-import { BoltLoaderComponent}  from '../src/components/BoltLoaderComponent'; // Import loader component
+import LogoLoader  from './components/LogoLoader'; // Import loader component
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   if (loading) {
-    return <BoltLoaderComponent />;
+    return <LogoLoader />;
   }
 
   return (
